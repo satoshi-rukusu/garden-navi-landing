@@ -1,0 +1,13 @@
+{
+  "name": "garden-navi-landing",
+  "version": "1.0.0",
+  "description": "菜園ナビ - イチゴ栽培完全ガイド",
+  "scripts": {
+    "dev": "python3 -m http.server 3000",
+    "build": "echo 'Static site - no build needed'",
+    "start": "python3 -m http.server 3000"
+  },
+  "keywords": ["strawberry", "gardening", "agriculture"],
+  "author": "Garden Navi Team",
+  "license": "MIT"
+}

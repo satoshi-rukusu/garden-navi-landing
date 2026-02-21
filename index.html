@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>菜園ナビ - イチゴ栽培完全ガイド</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #E63946 0%, #A4161A 100%);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        section {
+            padding: 3rem 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        section:last-child {
+            border-bottom: none;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #E63946;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .feature-card {
+            background: #f9f9f9;
+            padding: 2rem;
+            border-radius: 8px;
+            border-left: 4px solid #E63946;
+        }
+        
+        .feature-card h3 {
+            color: #E63946;
+            margin-bottom: 0.5rem;
+        }
+        
+        .feature-card p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: #E63946;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 1rem;
+            margin-bottom: 1rem;
+            transition: background 0.3s;
+        }
+        
+        .cta-button:hover {
+            background: #A4161A;
+        }
+        
+        .cta-button.secondary {
+            background: #22C55E;
+        }
+        
+        .cta-button.secondary:hover {
+            background: #16A34A;
+        }
+        
+        .app-preview {
+            background: #f0f0f0;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            margin: 2rem 0;
+        }
+        
+        .app-preview iframe {
+            width: 100%;
+            max-width: 500px;
+            height: 600px;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .ebook-section {
+            background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+            color: white;
+            padding: 3rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .ebook-section h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        
+        .ebook-section p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            opacity: 0.95;
+        }
+        
+        .ebook-section .cta-button {
+            background: white;
+            color: #D97706;
+        }
+        
+        .ebook-section .cta-button:hover {
+            background: #f0f0f0;
+        }
+        
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .guide-list {
+            background: #f9f9f9;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+        
+        .guide-list ol {
+            margin-left: 2rem;
+            color: #666;
+        }
+        
+        .guide-list li {
+            margin-bottom: 0.8rem;
+            line-height: 1.8;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            .features {
+                grid-template-columns: 1fr;
+            }
+            
+            .app-preview iframe {
+                height: 500px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🌱 菜園ナビ</h1>
+        <p>イチゴ栽培完全ガイド - 初心者から上級者まで</p>
+    </header>
+    
+    <div class="container">
+        <section>
+            <h2>イチゴ栽培を成功させよう</h2>
+            <p>菜園ナビは、イチゴ栽培の全てをサポートするアプリです。初心者でも迷わずに、甘くて大きなイチゴを育てることができます。</p>
+            <p style="margin-top: 1rem; color: #666;">年間スケジュール、栽培のコツ、日々の記録管理まで、家庭菜園に必要なすべてがここに。</p>
+        </section>
+        
+        <section>
+            <h2>✨ 主な機能</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <h3>📅 栽培カレンダー</h3>
+                    <p>9月から8月までの年間スケジュール。土づくり、植え付け、収穫まで、いつ何をすべきかが一目瞭然。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📖 イチゴ図鑑</h3>
+                    <p>栽培成功の秘訣を10のポイントに分けて解説。土づくり、肥料、摘果、防除など、実践的なコツを学べます。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📝 栽培日記</h3>
+                    <p>毎日の栽培の様子をメモに記録。成長の過程を振り返り、来年の栽培に活かせます。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🏠 ダッシュボード</h3>
+                    <p>今月の作業内容を一目で確認。現在の季節に必要な作業を優先順位付きで表示。</p>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h2>🚀 Webアプリを試す</h2>
+            <p>下記のアプリをブラウザで試してみてください。栽培カレンダー、図鑑、日記機能をすぐに使えます。</p>
+            <div class="app-preview">
+                <iframe src="https://8081-ihugwyoq89hhla3fq5y59-8febe62c.sg1.manus.computer" title="菜園ナビ Webアプリ"></iframe>
+            </div>
+            <div style="text-align: center;">
+                <a href="https://8081-ihugwyoq89hhla3fq5y59-8febe62c.sg1.manus.computer" class="cta-button" target="_blank">フルスクリーンで開く</a>
+            </div>
+        </section>
+        
+        <section>
+            <div class="ebook-section">
+                <h3>📚 完全ガイド電子書籍</h3>
+                <p>はじめての家庭菜園：失敗しないイチゴ栽培完全ガイド</p>
+                <p>準備編から収穫・保存まで、実践的な知識を網羅した完全ガイド。</p>
+                <a href="https://garden-navi-landing.vercel.app/strawberry_ebook.pdf" class="cta-button" download>PDFをダウンロード</a>
+            </div>
+        </section>
+        
+        <section>
+            <h2>📋 イチゴ栽培の10のポイント</h2>
+            <div class="guide-list">
+                <ol>
+                    <li><strong>土づくりと高畝</strong> - 水はけを良くするため、石灰と堆肥を混ぜ、高さ15～20cmの高畝を作ります。</li>
+                    <li><strong>苗選びと植え付け</strong> - 健康な苗を選び、クラウン（成長点）を埋めないように植え付けます。</li>
+                    <li><strong>冬越しのマルチング</strong> - 敷き藁やビニールで防寒と乾燥を防ぎます。</li>
+                    <li><strong>追肥のタイミングと場所</strong> - 株元を避け、畝の端に肥料をまきます。</li>
+                    <li><strong>わき芽摘み（摘芯）</strong> - 栄養を主株に集中させるため、わき芽を摘み取ります。</li>
+                    <li><strong>人工授粉</strong> - 形の良い実を作るため、筆を使って受粉を助けます。</li>
+                    <li><strong>摘果（てきか）</strong> - 小さな実を間引き、一粒を大きく育てます。</li>
+                    <li><strong>病害虫の防除</strong> - アブラムシやうどんこ病に対し、オーガニックな対策を施します。</li>
+                    <li><strong>収穫のベストタイミング</strong> - ヘタの際まで赤くなった完熟の実を収穫します。</li>
+                    <li><strong>ランナーで苗作り</strong> - 次のシーズンに向けた親株からの苗更新を行います。</li>
+                </ol>
+            </div>
+        </section>
+        
+        <section style="text-align: center; padding: 3rem 0;">
+            <h2>今すぐ始めよう</h2>
+            <p style="margin-bottom: 2rem; color: #666;">菜園ナビで、あなたのイチゴ栽培を成功させましょう。</p>
+            <a href="https://8081-ihugwyoq89hhla3fq5y59-8febe62c.sg1.manus.computer" class="cta-button">Webアプリを開く</a>
+            <a href="https://garden-navi-landing.vercel.app/strawberry_ebook.pdf" class="cta-button secondary" download>電子書籍をダウンロード</a>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2026 菜園ナビ - イチゴ栽培ガイド</p>
+        <p style="font-size: 0.9rem; margin-top: 1rem;">Powered by Expo + React Native</p>
+    </footer>
+</body>
+</html>
